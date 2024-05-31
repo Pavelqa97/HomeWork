@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4Task3</title>
+</head>
+<body>
+    <h1>Age Verification Page</h1>
+    <button onclick="verifyAge()">Enter Age</button>
+
+    <script>
+        function verifyAge() 
+        {
+            let minAge_pb97 = 18;
+            let maxAge_pb97 = 60;
+            let age_pb97 = prompt("Please enter your age:");
+
+            // Проверка и преобразование строки в число, если это строка с цифрами
+            if (typeof age_pb97 === 'string' && /^\d+$/.test(age_pb97)) {
+                age_pb97 = Number(age_pb97);
+            }
+
+            if (typeof age_pb97 !== 'number' || isNaN(age_pb97)) {
+                alert('Valid information');
+            } else if (age_pb97 < minAge_pb97) {
+                alert("You don't have access cause your age is " + age_pb97 + ". It's less than " + minAge_pb97);
+            } else if (age_pb97 >= minAge_pb97 && age_pb97 < maxAge_pb97) {
+                alert('Welcome!');
+            } else if (age_pb97 >= maxAge_pb97) {
+                alert('Keep calm and look Culture channel');
+            } else {
+                alert('Technical work');
+            }
+        }
+    </script>
+</body>
+</html>
