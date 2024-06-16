@@ -12,5 +12,6 @@ return result;
 // Проверка с массивом
 const arr = [NaN, 1, true, 5, "hello", undefined, 15.5, {}, []];
 
+
 console.log(getOnlyNumbers(arr)); 
 
