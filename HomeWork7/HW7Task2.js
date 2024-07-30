@@ -11,6 +11,7 @@ function transformSentence(sentence) {
             if (!letterCount[char]) {
                 letterCount[char] = 0;
             }
+            
             letterCount[char]++;
         }
     }
