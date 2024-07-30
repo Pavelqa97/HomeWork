@@ -51,4 +51,4 @@ const result = generateObject([
   ["4", 4],
   ["4", 5],
 ]);
-console.log(result);
+console.log(result); 

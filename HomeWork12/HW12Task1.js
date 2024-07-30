@@ -74,7 +74,7 @@ class Developer extends Employee {
 
          protected calculateSalary(): void {
         this.salary = this.experienceYears * 1000;
-    }
+    
           getDetails(): string {
         return `My name is ${this.name} ${this.surname}, I am a software developer with ${this.experienceYears} years of experience in ${this.programmingLanguage} and a salary of ${this.salary}$.`;
     }
